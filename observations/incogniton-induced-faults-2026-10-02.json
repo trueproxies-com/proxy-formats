@@ -1,0 +1,107 @@
+{
+  "observedDateUtc": "2026-10-02",
+  "application": "Incogniton 5.0.1.2",
+  "browserProfilesCreated": 0,
+  "unassignedDiagnosticLibraryEntriesTotal": 3,
+  "cases": [
+    {
+      "case": "SOCKS5 on HTTP port 8080",
+      "nativePath": "Proxy Library > New proxy",
+      "nativeType": "SOCKS5",
+      "port": 8080,
+      "preCheckFieldsVerified": {
+        "type": true,
+        "proxy": true,
+        "username": true,
+        "password": true
+      },
+      "startedAt": "2026-10-02T22:41:24.414Z",
+      "saved": true,
+      "profilesAssigned": 0,
+      "newProxyCheck": {
+        "lastCheckingObserved": true,
+        "terminalStatusCaptured": false,
+        "observedAt": "2026-10-02T22:46:25.208Z",
+        "qualification": "New proxy form showed a transient Checking proxy toast; no terminal result was retained. A saved-row check follows separately."
+      },
+      "savedReadback": {
+        "type": true,
+        "proxy": true,
+        "username": true,
+        "password": true
+      },
+      "savedCheckStartedAt": "2026-10-02T22:47:34.074Z",
+      "savedNativeOutcome": {
+        "observedAt": "2026-10-02T22:52:04.752Z",
+        "status": "Connected",
+        "fieldsStillMatch": {
+          "type": true,
+          "proxy": true,
+          "username": true,
+          "password": true
+        },
+        "authenticationOrBrowserSuccessEstablished": false,
+        "qualification": "The planned type/port mismatch did not reproduce a native failure. Connected is a check display; checker transport and actual SOCKS5 browser behavior on 8080 are unverified."
+      }
+    },
+    {
+      "case": "Invalid targeting option country-usa",
+      "nativePath": "Proxy Library > Edit proxy",
+      "nativeType": "HTTPS",
+      "port": 8080,
+      "preSaveFieldsVerified": {
+        "type": true,
+        "proxy": true,
+        "username": true,
+        "password": true
+      },
+      "profilesAssigned": 0,
+      "savedReadback": {
+        "observedAt": "2026-10-02T23:10:40.731Z",
+        "proxyNameMatches": true,
+        "typeMatches": true,
+        "usernameMatches": true,
+        "hostAndPortMatch": true,
+        "passwordMatches": true
+      },
+      "checkStartedAt": "2026-10-02T23:10:40.778Z",
+      "nativeOutcome": {
+        "observedAt": "2026-10-02T23:13:01.151Z",
+        "status": "Connected",
+        "savedInvalidCountryStillMatches": true,
+        "authenticationOrTargetingSuccessEstablished": false
+      }
+    },
+    {
+      "case": "SOCKS5 on 1080 with deliberately invalid password",
+      "nativePath": "Proxy Library > Edit proxy",
+      "nativeType": "SOCKS5",
+      "port": 1080,
+      "profilesAssigned": 0,
+      "preSaveFieldsVerified": {
+        "type": true,
+        "hostAndPort": true,
+        "username": true,
+        "invalidPassword": true
+      },
+      "savedReadback": {
+        "observedAt": "2026-10-02T23:13:45.035Z",
+        "typeMatches": true,
+        "hostAndPortMatches": true,
+        "usernameMatches": true,
+        "invalidPasswordMatches": true
+      },
+      "checkStartedAt": "2026-10-02T23:13:51.067Z",
+      "nativeOutcome": {
+        "observedAt": "2026-10-02T23:16:28.798Z",
+        "status": "Connection failed",
+        "savedInvalidPasswordStillMatches": true,
+        "typeStillMatches": true,
+        "hostAndPortStillMatches": true,
+        "usernameStillMatches": true,
+        "authenticationRejectionCauseEstablished": false
+      }
+    }
+  ],
+  "qualification": "Native status does not establish credential acceptance, actual browser connectivity or targeting. All diagnostic cases used zero assigned profiles."
+}
