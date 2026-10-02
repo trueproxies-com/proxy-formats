@@ -1,0 +1,31 @@
+profile,protocol,check_result,exit_ip_country,exit_city,tz_match,lang_match,geo_match,webrtc,dns,load_ms,notes,native_type,port,reported_timezone,reported_ping_ms,reported_check_country
+P01,SOCKS5,Connected,US,Chicago,true,unverified,unverified,Leak detected,No indicator,15503,Original free-text notes omitted; see README for limits.,SOCKS5,1080,America/Chicago (GMT-5),1129,US
+P01,HTTP-port check,Connected,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8080,America/Chicago (GMT-5),714,US
+P01,HTTPS-port check,Connection failed,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8443,,,
+P02,SOCKS5,Connected,US,Chicago,true,unverified,unverified,Leak detected,Unavailable,12919,Original free-text notes omitted; see README for limits.,SOCKS5,1080,America/Chicago (GMT-5),1183,US
+P02,HTTP-port check,Connected,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8080,America/Chicago (GMT-5),638,US
+P02,HTTPS-port check,Connection failed,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8443,,,
+P03,SOCKS5,Connected,,,,,,,,,Original free-text notes omitted; see README for limits.,SOCKS5,1080,America/Chicago (GMT-5),1261,US
+P03,HTTP-port check,Connected,GB,London,true,unverified,unverified,Leak detected,No indicator,2518,Original free-text notes omitted; see README for limits.,HTTPS,8080,Europe/London (GMT+1),614,GB
+P03,HTTPS-port check,Connection failed,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8443,,,
+P04,SOCKS5,Connected,GB,London,false,unverified,unverified,Leak detected,No indicator,7247,Original free-text notes omitted; see README for limits.,SOCKS5,1080,Europe/London (GMT+1),903,GB
+P04,HTTP-port check,Connected,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8080,Europe/London (GMT+1),637,GB
+P04,HTTPS-port check,Connection failed,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8443,,,
+P05,SOCKS5,Connected,DE,Berlin,false,unverified,unverified,Leak detected,Review,14846,Original free-text notes omitted; see README for limits.,SOCKS5,1080,Europe/London (GMT+1),978,GB
+P05,HTTP-port check,Connected,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8080,Europe/Berlin (GMT+2),835,DE
+P05,HTTPS-port check,Connection failed,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8443,,,
+P06,SOCKS5,Connected,DE,Stuttgart,false,unverified,unverified,Leak detected,Unavailable,28189,Original free-text notes omitted; see README for limits.,SOCKS5,1080,Europe/Berlin (GMT+2),2474,DE
+P06,HTTP-port check,Connected,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8080,Europe/Berlin (GMT+2),1093,DE
+P06,HTTPS-port check,Connection failed,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8443,,,
+P07,SOCKS5,Connected,FR,Nanterre,false,unverified,unverified,Leak detected,Review,26022,Original free-text notes omitted; see README for limits.,SOCKS5,1080,Europe/Berlin (GMT+2),2460,DE
+P07,HTTP-port check,Connected,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8080,Europe/Paris (GMT+2),706,FR
+P07,HTTPS-port check,Connection failed,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8443,,,
+P08,SOCKS5,Connected,FR,Cergy-Pontoise,false,unverified,unverified,Leak detected,Review,9281,Original free-text notes omitted; see README for limits.,SOCKS5,1080,Europe/Paris (GMT+2),996,FR
+P08,HTTP-port check,Connected,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8080,Europe/Paris (GMT+2),785,FR
+P08,HTTPS-port check,Connection failed,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8443,,,
+P09,SOCKS5,Connected,CA,Toronto,false,unverified,unverified,Leak detected,Review,13175,Original free-text notes omitted; see README for limits.,SOCKS5,1080,Europe/Paris (GMT+2),964,FR
+P09,HTTP-port check,Connected,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8080,America/Toronto (GMT-4),1418,CA
+P09,HTTPS-port check,Connection failed,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8443,,,
+P10,SOCKS5,Connected,CA,Halifax,false,unverified,unverified,Leak detected,Unavailable,13302,Original free-text notes omitted; see README for limits.,SOCKS5,1080,America/Toronto (GMT-4),1217,CA
+P10,HTTP-port check,Connected,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8080,America/Halifax (GMT-3),946,CA
+P10,HTTPS-port check,Connection failed,,,,,,,,,Original free-text notes omitted; see README for limits.,HTTPS,8443,,,

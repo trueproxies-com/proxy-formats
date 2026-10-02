@@ -60,6 +60,6 @@ Use a password with AdsPower targeting: credential-free import can drop the user
 
 ## Recorded observations
 
-[Sanitized native-browser CSVs](observations/README.md) preserve 28 recorded rows for AdsPower, Dolphin Anty and GoLogin, including retries, missing cells and DNS review flags. They are limited observations, not acceptance of the full seven-browser matrix. The data is available in the repository and is excluded from the npm package.
+[Sanitized native-browser CSVs](observations/README.md) preserve 58 recorded rows for AdsPower, Dolphin Anty, GoLogin and Incogniton, including failures, retries, missing cells and DNS review flags. They are limited observations, not acceptance of the full seven-browser matrix. Incogniton's built-in check metadata is separated from actual browser measurements. The data is available in the repository and is excluded from the npm package.
 
 MIT. Vendor names identify input compatibility; no affiliation is implied.
