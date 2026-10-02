@@ -1,0 +1,40 @@
+{
+  "name": "@trueproxies/proxy-formats",
+  "version": "0.1.0",
+  "description": "Local proxy string formatting and session lists for twelve browsers. No network calls.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "tp-proxy-formats": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://trueproxies.com/integrations/anti-detect-browsers/",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "^20"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trueproxies-com/proxy-formats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trueproxies-com/proxy-formats/issues"
+  }
+}

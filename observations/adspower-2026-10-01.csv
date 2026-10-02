@@ -1,0 +1,11 @@
+profile,protocol,check_result,exit_ip_country,exit_city,tz,lang,tz_match,lang_match,geo_match,webrtc,dns,load_ms,dcl_ms,notes
+P01,http-8080,pass,US,Chicago,America/Chicago,en-US,yes,yes,,no indicator,unavailable,18402,4078,Original free-text notes omitted; see README for limits.
+P02,http-8080,pass,US,Baltimore,America/New_York,en-US,yes,yes,,no indicator,review: 6 of 41 resolvers off-country; resolvers Cloudflare AS13335,9068,2373,Original free-text notes omitted; see README for limits.
+P03,http-8080,pass,GB,London,Europe/London,en-GB,yes,yes,,no indicator,"before fix: review 13 of 24 off-country incl. WorldStream NL AS49981 (gateway resolver); after fix: 24 resolvers all Cloudflare/Google, 7 of 24 Google US",,,Original free-text notes omitted; see README for limits.
+P04,http-8080,pass,GB,Bradford,Europe/London,en-GB,yes,yes,,no indicator,unavailable (no usable resolver evidence),421,403,Original free-text notes omitted; see README for limits.
+P05,http-8080,pass,DE,Berlin,Europe/Berlin,de-DE,yes,yes,,,,26296,5940,Original free-text notes omitted; see README for limits.
+P06,http-8080,pass,DE,Flensburg,Europe/Berlin,de-DE,yes,yes,,no indicator,unavailable,34422,6131,Original free-text notes omitted; see README for limits.
+P07,http-8080,pass,FR,Paris,Europe/Paris,fr-FR,yes,yes,,no indicator,review 19 of 30 off-country,7581,1577,Original free-text notes omitted; see README for limits.
+P08,http-8080,pass,FR,Carcassonne,Europe/Paris,fr-FR,yes,yes,,,,7801,1397,Original free-text notes omitted; see README for limits.
+P09,http-8080,pass,CA,Toronto,America/Toronto,en-CA,yes,yes,,no indicator,review 17 of 25 off-country,8555,1996,Original free-text notes omitted; see README for limits.
+P10,http-8080,pass,CA,Brampton,America/Toronto,en-CA,yes,yes,,no indicator,review 18 of 25 off-country,9270,2609,Original free-text notes omitted; see README for limits.

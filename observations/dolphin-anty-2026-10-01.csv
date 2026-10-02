@@ -1,0 +1,13 @@
+profile,protocol,check_result,exit_ip_country,exit_city,tz,lang,tz_match,lang_match,geo_match,webrtc,dns,load_ms,dcl_ms,notes
+P01,http-8080,pass (2 of 2 runs),US,Chicago,America/Chicago,en-US,yes,yes,,"no indicator (WebRTC active, no unexpected public address)",unavailable,,,Original free-text notes omitted; see README for limits.
+P01,socks5-1080,pass,,,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P02,http-8080,pass (2 of 2),GB,London,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P02,socks5-1080,pass on 2nd try (1st ERROR),,,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P03,http-8080,pass (2 of 2),DE,,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P03,socks5-1080,pass,,,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P04,http-8080,pass (2 of 2),FR,Paris,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P04,socks5-1080,pass,,,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P05,http-8080,"1st run ERROR, 2nd pass",CA,,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P05,socks5-1080,pass,,,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P06,http-8080,pass,GB,London,Europe/London,en-GB,yes,yes,,,,,,Original free-text notes omitted; see README for limits.
+P07,http-8080,pass,DE,Neumunster,Europe/Berlin,de-DE,yes,yes,,,,,,Original free-text notes omitted; see README for limits.

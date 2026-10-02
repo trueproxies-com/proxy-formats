@@ -1,0 +1,7 @@
+profile,protocol,check_result,exit_ip_country,exit_city,tz,lang,tz_match,lang_match,geo_match,webrtc,dns,load_ms,dcl_ms,notes
+P01,http-8080,pass (Connected),US,Chicago,America/Chicago,en-US,yes,yes,,"no indicator (WebRTC active, no unexpected address)",review 1 of 33 (Cloudflare resolvers),,,Original free-text notes omitted; see README for limits.
+P02,http-8080,pass (Connected),CA,Toronto,America/Toronto,en-US,yes (to exit),no,,,,,,Original free-text notes omitted; see README for limits.
+P03,http-8080,pass (Connected),DE,Halle (Saale),Europe/Berlin,de,yes,yes,,,,,,Original free-text notes omitted; see README for limits.
+P04,socks5-1080,pass,US,,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P05,socks5-1080,pass,CA,,,,,,,,,,,Original free-text notes omitted; see README for limits.
+P06,socks5-1080,pass,DE,,,,,,,,,,,Original free-text notes omitted; see README for limits.
