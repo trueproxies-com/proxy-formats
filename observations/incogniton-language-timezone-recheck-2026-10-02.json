@@ -1,0 +1,76 @@
+{
+  "observedDateUtc": "2026-10-02",
+  "app": "Incogniton",
+  "version": "5.0.1.2",
+  "source": "Actual named native browser, read-only DevTools console and reopened saved profile editor",
+  "measurement": "JSON.stringify({language:navigator.language,languages:navigator.languages,timeZone:Intl.DateTimeFormat().resolvedOptions().timeZone})",
+  "profiles": [
+    {
+      "profile": "P001",
+      "exitCountry": "US",
+      "exitCity": "Chicago",
+      "exitTimezone": "America/Chicago",
+      "navigatorLanguage": "en-GB",
+      "navigatorLanguages": [
+        "en-GB"
+      ],
+      "navigatorTimezone": "Europe/London",
+      "timezoneMatch": false,
+      "languageRegionMatch": false,
+      "geolocationMatch": "unverified",
+      "toolCompletedSeconds": 32.6,
+      "toolVerdict": "Inconclusive",
+      "toolChannels": {
+        "ipv4": "No indicator",
+        "ipv6": "Unavailable",
+        "webrtc": "Review",
+        "dns": "Unavailable"
+      },
+      "toolOutcomeCode": "TP-ILT-2026.07.18-I-F4-WR-DU-BN-ON",
+      "savedSettingsReadback": {
+        "languageFillBasedOnIp": true,
+        "timezoneFillBasedOnIp": true,
+        "webrtcMode": "Altered",
+        "webrtcPublicIpFillBasedOnIp": true,
+        "geolocationPermissionMode": "Prompt",
+        "geolocationFillBasedOnIp": true
+      },
+      "managerMetadataCountry": "GB",
+      "managerMetadataTimezone": "Europe/London",
+      "profileCheckMenuActionAttempted": true,
+      "profileCheckTerminalOutcome": "not exposed",
+      "managerMetadataChangedAfterMenuAction": false,
+      "finalProfileState": "Ready"
+    },
+    {
+      "profile": "P002",
+      "navigatorLanguage": "en-GB",
+      "navigatorLanguages": [
+        "en-GB"
+      ],
+      "navigatorTimezone": "Europe/London",
+      "initialToolCompletedSeconds": 32.6,
+      "initialToolVerdict": "Inconclusive",
+      "initialToolChannels": {
+        "ipv4": "Unavailable",
+        "ipv6": "Unavailable",
+        "webrtc": "Unavailable",
+        "dns": "Unavailable"
+      },
+      "initialToolOutcomeCode": "TP-ILT-2026.07.18-I-F0-WU-DU-BN-ON",
+      "freshRetry": {
+        "completedSeconds": 32.6,
+        "verdict": "Inconclusive",
+        "allFourChannels": "Unavailable",
+        "outcomeCode": "TP-ILT-2026.07.18-I-F0-WU-DU-BN-ON"
+      },
+      "currentExitLocation": "unavailable",
+      "combinedGeoAcceptance": "unverified",
+      "finalProfileState": "Ready"
+    }
+  ],
+  "directBaselineUsed": false,
+  "geolocationPermissionRequested": false,
+  "settingsChanged": false,
+  "qualification": "Supplemental native measurements; the thirty baseline CSV rows remain unchanged. P001 exit US/Chicago disagreed with navigator en-GB and Europe/London despite enabled saved fill controls. P002 had no current exit comparison after two unavailable tool runs. No lookup, cache or route cause is established; combined geolocation acceptance remains unverified. Original labels, hosts, credentials, full addresses and coordinates are omitted."
+}
