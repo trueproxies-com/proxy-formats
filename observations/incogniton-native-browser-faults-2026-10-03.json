@@ -1,0 +1,88 @@
+{
+  "observedDateUtc": "2026-10-03",
+  "application": "Incogniton 5.0.1.2",
+  "profile": "P001",
+  "serviceQualification": "Existing approved Residential IPv4 GB service; planned Traffic pack and VPN-off conditions not established.",
+  "target": "https://trueproxies.com/tools/ip-leak-test/",
+  "cases": [
+    {
+      "case": "SOCKS5 on port 8080 with original credentials",
+      "savedReadback": {
+        "observedAt": "2026-10-03T00:20:58.797Z",
+        "typeSocks5": true,
+        "hostAndPortMatches": true,
+        "usernameMatches": true,
+        "passwordMatches": true
+      },
+      "fullUrlPastedAndVerifiedBeforeReturn": true,
+      "launchStatus": "Launched",
+      "firstBrowserError": {
+        "observedAt": "2026-10-03T00:26:07.052Z",
+        "code": "ERR_SOCKS_CONNECTION_FAILED",
+        "pageHeading": "This site can’t be reached"
+      },
+      "normalReload": {
+        "observedAt": "2026-10-03T00:26:51.201Z",
+        "code": "ERR_SOCKS_CONNECTION_FAILED"
+      },
+      "restoration": {
+        "observedAt": "2026-10-03T00:27:42.238Z",
+        "typeMatches": true,
+        "hostAndPortMatches": true,
+        "usernameMatches": true,
+        "passwordMatches": true,
+        "savedAndReopened": true
+      },
+      "qualification": "The actual browser failure is distinct from the earlier unassigned library Connected display. No same-run successful original-port control was measured, so the port alone is not established as the failure cause."
+    },
+    {
+      "case": "Misspelled country-usa option on SOCKS5/1080 with original password",
+      "savedReadback": {
+        "observedAt": "2026-10-03T00:28:07.313Z",
+        "typeSocks5": true,
+        "hostAndPortMatches": true,
+        "invalidCountryUsernameMatches": true,
+        "passwordMatches": true
+      },
+      "fullUrlPastedAndVerifiedBeforeReturn": true,
+      "launchStatus": "Launched",
+      "firstNavigation": {
+        "observedAt": "2026-10-03T00:30:25.883Z",
+        "visibleResult": "Blank dark page",
+        "htmlContentExposed": false,
+        "browserErrorCodeObserved": false,
+        "screenshotOcrTextRegionsInBody": 0
+      },
+      "normalReload": {
+        "observedAt": "2026-10-03T00:32:24.335Z",
+        "htmlContentExposed": false,
+        "browserErrorCodeObserved": false,
+        "loadingControlNoLongerShown": true
+      },
+      "console": {
+        "errorCodeExposed": false,
+        "evaluationPerformed": false
+      },
+      "restoration": {
+        "observedAt": "2026-10-03T00:34:04.992Z",
+        "typeMatches": true,
+        "hostAndPortMatches": true,
+        "usernameMatches": true,
+        "passwordMatches": true,
+        "savedAndReopened": true
+      },
+      "authenticationOrTargetingAcceptanceEstablished": false,
+      "cancellationOrFailureCauseEstablished": false,
+      "errorMappingComplete": false,
+      "qualification": "No terminal browser error or successful page load was established. Earlier HTTPS/8080 library Connected is a separate observation and does not establish acceptance of this saved SOCKS5 browser configuration."
+    }
+  ],
+  "finalState": {
+    "observedAt": "2026-10-03T00:35:29.750Z",
+    "readyProfiles": 10,
+    "launchedProfiles": 0,
+    "newProfilesCreated": 0,
+    "p04SessionProfileChanged": false
+  },
+  "qualification": "No HTTP status or gateway reason was exposed by these browser cases. Closed-trial, rate-limit, IPv6 and exact native No connection coverage remain open."
+}
