@@ -38,3 +38,12 @@ The [saved invalid-password browser receipt](incogniton-invalid-password-browser
 Credentials, proxy hosts, exit addresses and original profile labels are excluded. Original free-text notes are omitted to avoid publishing identifiers or credentials. Non-address observation fields are retained without upgrading their verdicts. These observations are offered under the repository's MIT license.
 
 The [later native browser fault receipt](incogniton-native-browser-faults-2026-10-03.json) records two additional saved P001 configurations. SOCKS5 on 8080 with original credentials returned `ERR_SOCKS_CONNECTION_FAILED`, repeated on one normal Reload. This is distinct from the earlier unassigned library Connected display; no same-run original-port control or gateway reason was measured. A `country-usa` typo on SOCKS5/1080 launched but showed a blank page, with no terminal error or successful load established after one normal Reload and console inspection. Original fields were restored, saved and reopened after both cases; all ten profiles ended Ready. Baseline CSVs remain unchanged and the full planned error matrix is incomplete.
+
+The [controlled gateway reason follow-up](incogniton-controlled-gateway-reasons-2026-10-03.json)
+uses privately verified P001 fields in separate transport probes. Plain HTTP
+forward GET returned 200 for the original control, 407 with a targeting-options
+reason for `country-usa`, and 407 with a wrong-password reason for the invalid
+password. The same-port CONNECT control returned 200, while the two fault
+requests timed out or disconnected without a reason header. These differing
+surfaces are preserved; no native Incogniton message, successful TLS page load
+or complete error matrix is inferred. No production telemetry is exported.

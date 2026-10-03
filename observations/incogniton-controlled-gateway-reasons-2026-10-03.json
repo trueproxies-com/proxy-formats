@@ -1,0 +1,72 @@
+{
+  "observedDateUtc": "2026-10-03",
+  "profile": "P001",
+  "serviceQualification": "Existing approved Residential IPv4 GB service; planned Traffic pack/VPN-off setup not established",
+  "httpConnectControls": [
+    {
+      "case": "original control",
+      "startedAtUtc": "2026-10-03T01:37:03.509254+00:00",
+      "transport": "HTTP CONNECT",
+      "gatewayPort": 8080,
+      "destination": "trueproxies.com:443",
+      "httpStatus": 200,
+      "proxyReason": null,
+      "reasonHeaderPresent": false,
+      "finishedAtUtc": "2026-10-03T01:37:09.093905+00:00"
+    },
+    {
+      "case": "misspelled country",
+      "startedAtUtc": "2026-10-03T01:37:09.093956+00:00",
+      "transport": "HTTP CONNECT",
+      "gatewayPort": 8080,
+      "destination": "trueproxies.com:443",
+      "errorType": "TimeoutError",
+      "finishedAtUtc": "2026-10-03T01:37:24.170110+00:00"
+    },
+    {
+      "case": "invalid password",
+      "startedAtUtc": "2026-10-03T01:37:24.170201+00:00",
+      "transport": "HTTP CONNECT",
+      "gatewayPort": 8080,
+      "destination": "trueproxies.com:443",
+      "errorType": "RemoteDisconnected",
+      "finishedAtUtc": "2026-10-03T01:37:34.826698+00:00"
+    }
+  ],
+  "httpForwardGetControls": [
+    {
+      "case": "original control",
+      "startedAtUtc": "2026-10-03T01:39:19.330670+00:00",
+      "transport": "HTTP forward GET",
+      "gatewayPort": 8080,
+      "destination": "http://example.com/",
+      "httpStatus": 200,
+      "proxyReason": null,
+      "reasonHeaderPresent": false,
+      "finishedAtUtc": "2026-10-03T01:39:19.696074+00:00"
+    },
+    {
+      "case": "misspelled country",
+      "startedAtUtc": "2026-10-03T01:39:19.696094+00:00",
+      "transport": "HTTP forward GET",
+      "gatewayPort": 8080,
+      "destination": "http://example.com/",
+      "httpStatus": 407,
+      "proxyReason": "The targeting options in your username are not valid for this service. Check spelling, and do not repeat an option.",
+      "reasonHeaderPresent": true,
+      "finishedAtUtc": "2026-10-03T01:39:19.849365+00:00"
+    },
+    {
+      "case": "invalid password",
+      "startedAtUtc": "2026-10-03T01:39:19.849388+00:00",
+      "transport": "HTTP forward GET",
+      "gatewayPort": 8080,
+      "destination": "http://example.com/",
+      "httpStatus": 407,
+      "proxyReason": "Wrong proxy password. Check the credentials on your service page.",
+      "reasonHeaderPresent": true,
+      "finishedAtUtc": "2026-10-03T01:39:20.007419+00:00"
+    }
+  ],
+  "qualification": "Transport controls using privately verified stored QA fields, not new native Incogniton checks. Forward GET changed only the country option or password from its control. CONNECT fault outcomes remain distinct; no destination TLS request was sent. Original native fields and baseline CSVs unchanged. Native error mapping, No connection status, Traffic pack/VPN-off, closed-trial, rate-limit and IPv6 acceptance remain incomplete. Production telemetry and all credential/host/source/exit details excluded."
+}
